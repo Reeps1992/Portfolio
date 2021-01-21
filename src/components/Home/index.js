@@ -16,6 +16,9 @@ const Home = () => (
         <p>Near Rennes & Saint-Malo, France</p>
       </div>
     </div>
+    <div>
+      <p id='green'>Work in progess ...</p>
+    </div>
     <div className="socials">
       <a
         href="https://github.com/Reeps1992"

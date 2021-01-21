@@ -2,15 +2,16 @@ import React from 'react'
 import { Card, Image, Icon } from 'semantic-ui-react'
 import PropTypes from 'prop-types'
 
+// images fixes
+
 const Project = ({ elt }) => {
   const name = elt.name.charAt(0).toUpperCase() + elt.name.slice(1)
 
-  const handleClick = (e) => {
-    console.log(e.target.textContent)
-  }
+  console.clear()
+
   return (
     <div className="project__card">
-      <Card onClick={(e) => handleClick(e)}>
+      <Card>
         <Image
           src={elt.img}
           alt={elt.name}
@@ -18,7 +19,7 @@ const Project = ({ elt }) => {
           ui={false}
         />
         <Card.Content>
-          <Card.Header>{name}</Card.Header>
+          <Card.Header><a href={elt.path} target='_blank' rel='noreferrer' >{name}</a></Card.Header>
           <Card.Meta>
             <span className="date">{elt.date}</span>
           </Card.Meta>
