@@ -1,0 +1,103 @@
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 220px;
+    width: 100%;
+
+    @media (max-width : 750px ) {
+        margin-top: 150px;
+    }
+
+    .skill {
+        z-index: 3;
+        padding-bottom: 1.5em;
+        border: 2px solid  #5fb97a;
+        border-radius: 5px;
+        height: 100%;
+        width: 20%;
+        margin-bottom: 1em;
+        overflow: hidden;
+
+        @media (max-width : 750px ) {
+            width: 40%;
+            font-size: .6em;
+        }
+
+        .skill-elt {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.3em;
+            color:white;
+            padding: 0.5em;
+            width: 100%;
+            border-bottom: 2px solid #5fb97a;
+            background: #5fb97a;
+        }
+
+        p { 
+            font-size: 1.8em;
+            text-align: left;
+            color: #5fb97a;
+            outline: none;
+            padding: 0.1em 0.4em;
+            padding-left: 0.5em;
+            border-radius: 5px;
+            position: relative;
+            z-index: 1;
+            font-family: 'Roboto', sans-serif;
+            transition: all .2s ease-in-out;
+            width: 100%;
+        }
+
+        p:hover {
+            color:white;
+            transform: translateX(15px);
+        }
+
+        p::before {
+            transition: 0.4s all ease;
+            position: absolute;
+            width: 130%;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            right: 50%;
+            opacity: 0;
+            content: "";
+            background-color: #5fb97a;
+            z-index: 2;
+            transform: skewX(15deg);
+            border-radius: 4px;
+        }
+
+        @media (max-width : 750px ) {
+            p::before {
+                width: 100%;
+            }
+        }
+    
+        p:hover::before {
+            transition: .4s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            z-index: -1;
+        }
+    }
+
+    
+
+    
+
+    
+
+
+
+}

@@ -1,0 +1,15 @@
+.projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 220px;
+
+    @media (max-width: 750px) {
+        margin-top: 150px;
+    }
+
+    .project__card {
+        margin: .8em;
+    }
+}

@@ -1,0 +1,108 @@
+
+/* IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+
+/* GENERAL */
+
+body {
+  // background: #152842;
+  background-image: url('img/bgimg.png');
+  background-color: #e7e7e5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+button:focus{
+  outline: none;
+}
+
+
+
+
+
+/* ARROW */
+
+.arrow {
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  display: none;
+  justify-content: flex-end;
+  margin-right: 2em;
+  transition: display .3s ease-in-out;
+}
+
+.arrow img{
+  width: 100px;
+  height: 100px;
+}
+
+.showed {
+  display: flex;
+}
+
+/* NAV */
+
+
+
+/* CSS TRANSITION */
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.fade-exit {
+  transform: translateX(0%);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.fade-enter-active ,
+.fade-exit-active {
+  transition: opacity 500ms, transform 500ms;
+}
+
+/* KEYFRAMES */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

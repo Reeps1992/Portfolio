@@ -1,0 +1,116 @@
+export default [
+    {
+        name : "Javascript",
+        description: "",
+        classification : "language",
+        active : false,
+    },
+    {
+        name : "PHP",
+        description: "",
+        classification : "language",
+        active : false,
+    },
+    {
+        name : "HTML5",
+        description: "",
+        classification : "language",
+        active : false,
+    },
+    {
+        name : "CSS3",
+        description: "",
+        classification : "language",
+        active : false,
+    },
+    {
+        name : "SQL",
+        description: "",
+        classification : "language",
+        active : false,
+    },
+    {
+        name : "React",
+        description: "",
+        classification : "framework",
+        active : false,
+    },
+    {
+        name : "Redux",
+        description: "",
+        classification : "framework",
+        active : false,
+    },
+    {
+        name : "Jquery",
+        description: "",
+        classification : "framework",
+        active : false,
+    },
+    {
+        name : "Bootstrap",
+        description: "",
+        classification : "framework",
+        active : false,
+    },
+    {
+        name : "GitHub",
+        description: "",
+        classification : "tool",
+        active : false,
+    },
+    {
+        name : "Npm",
+        description: "",
+        classification : "tool",
+        active : false,
+    },
+    {
+        name : "Yarn",
+        description: "",
+        classification : "tool",
+        active : false,
+    },
+    {
+        name : "Mocha",
+        description: "",
+        classification : "tool",
+        active : false,
+    },
+    {
+        name : "Chai",
+        description: "",
+        classification : "tool",
+        active : false,
+    },
+    {
+        name : "Enzyme",
+        description: "",
+        classification : "tool",
+        active : false,
+    },
+    {
+        name : "Redux devtool",
+        description: "",
+        classification : "tool",
+        active : false,
+    },
+    {
+        name : "Webpack",
+        description: "",
+        classification : "tool",
+        active : false,
+    },
+    {
+        name : "REST API",
+        description: "",
+        classification : "special",
+        active : false,
+    },
+    {
+        name : 'WebSocket',
+        description: "",
+        classification : "special",
+        active : false,
+    }
+]
