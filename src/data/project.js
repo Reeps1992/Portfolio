@@ -33,7 +33,7 @@ export default [
         date : '12/20',
         desc : 'This project was made with my team during my studies on React.JS & Redux.',
         repo : 'https://github.com/Reeps1992',
-        img : 'http://ec2-100-25-30-18.compute-1.amazonaws.com/api/img/recipes/salade-cesar-titi007-3.jpeg',
+        img : 'https://img.freepik.com/vecteurs-libre/cartoon-kid-cook_10308-227.jpg?size=338&ext=jpg',
     },
     
 ]
