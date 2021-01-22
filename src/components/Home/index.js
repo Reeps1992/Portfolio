@@ -18,6 +18,7 @@ const Home = () => (
     </div>
     <div>
       <p id='green'>Work in progess ...</p>
+      <p id='green'>Responsive coming soon ...</p>
     </div>
     <div className="socials">
       <a
