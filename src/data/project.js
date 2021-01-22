@@ -23,7 +23,7 @@ export default [
         path : 'https://portfolio-lovat-gamma-43.vercel.app/',
         date : '01/21',
         desc : 'This Portfolio made with React JS',
-        repo : 'https://github.com/Reeps1992',
+        repo : 'https://github.com/Reeps1992/Portfolio',
         img : 'https://media.istockphoto.com/photos/minimal-work-space-creative-flat-lay-photo-of-workspace-desk-top-view-picture-id928805632?k=6&m=928805632&s=612x612&w=0&h=cGxMuhinwtaQZeRBs9o5w98fJYoU-vhHmO80YhWlvwE=',
     },
     { 
