@@ -1,15 +1,125 @@
 .projects {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 220px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
 
-    @media (max-width: 750px) {
-        margin-top: 150px;
+    @media (max-width: 769px) {
+        margin-top: 70px;
+        align-items: end;
+
     }
 
-    .project__card {
-        margin: .8em;
+    p {
+        margin: 0 0 .5em;
     }
+
+    .card {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 1.4em auto;
+        padding: .7em;
+        max-width: 300px;
+        @media (min-width: 450px) {
+            width: 100%;
+        }
+        @media (min-width: 768px) {
+            width: 45%;
+        }
+        @media (min-width: 1024px) {
+            width: 30%;
+        }
+        height: 450px;
+
+        border-radius: 8px;
+        background: #f3edee;
+        box-shadow:  7px 7px 14px #cfc9ca,
+                    -7px -7px 14px #ffffff,
+                    inset 2px 2px 15px rgba(238, 233, 233, 0.514),
+                    inset -2px -2px 15px rgba(221, 214, 214, 0.5);
+
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            max-width: 250px;
+            max-height: 250px;
+            margin: auto;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+            }
+
+        }
+
+        &__content {
+            width: 100%;
+            height: 42.5%;
+            padding: 0.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-radius: 6px;
+            color: black;
+            &__title {
+                margin: 0 auto;
+                font-family: 'Montserrat', sans-serif !important;
+                text-shadow: 5px 5px 12px rgba(145, 141, 141, 0.377);
+            }
+        }
+
+        a {
+            color: #5fb97a;
+            font-size: 1.6em;
+        }
+
+        .date {
+            text-align: right;
+            margin-top: 5px;
+            padding: 0 .8em;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        .desc {
+            text-align: left;
+            padding: .3em .8em;
+            margin-top: -6px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .gitrepo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8em;
+            background: linear-gradient(145deg, #fffeff, #dbd5d6);
+            box-shadow: 7px 7px 14px #cfc9ca,
+                        -7px -7px 14px #ffffff,
+                        inset 2px 2px 15px rgba(238, 233, 233, 0.514),
+                        inset -2px -2px 15px rgba(221, 214, 214, 0.5);
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            color: rgba(179, 179, 179, 0.767);
+            transition: .3s .1s;
+
+            i {
+                margin: 5px 0 0 0 !important;            
+            }
+
+            &:hover {
+                color: #5fb97a;
+            }
+        }
+
+    }
+
 }

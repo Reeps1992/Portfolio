@@ -13,7 +13,7 @@ export default [
         name : 'apptimizer',
         path : 'http://apptimizer.kevin-conversin-dev.ovh/construct/pages/login.php',
         date : '11/19',
-        desc : 'ERP pour un projet de formation afin de m\'améliorer en PHP. (Si vous souhaitez y jeter un coup d\'oeil, envoyez moi un MP via LinkedIn)',
+        desc : 'ERP pour un projet de formation afin de m\'améliorer en PHP.',
         repo : 'https://github.com/Reeps1992/Apptimizer_01',
         img : 'https://media.istockphoto.com/vectors/enterprise-resource-planning-illustration-concept-vector-id1283052761?k=6&m=1283052761&s=612x612&w=0&h=CfilrsfVQ4k3h1_PJ457sNkyPWDA4QCeGX7vsC3TTtk=',
     },

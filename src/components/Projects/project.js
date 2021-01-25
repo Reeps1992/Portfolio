@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Image, Icon } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react'
 import PropTypes from 'prop-types'
 
 // images fixes
@@ -7,33 +7,30 @@ import PropTypes from 'prop-types'
 const Project = ({ elt }) => {
   const name = elt.name.charAt(0).toUpperCase() + elt.name.slice(1)
 
-  console.clear()
-
   return (
-    <div className="project__card">
-      <Card>
-        <Image
+    <div className="card">
+
+      <div 
+        className='card__img'
+      >
+        <img
           src={elt.img}
           alt={elt.name}
-          wrapped
-          ui={false}
         />
-        <Card.Content>
-          <Card.Header><a href={elt.path} target='_blank' rel='noreferrer' >{name}</a></Card.Header>
-          <Card.Meta>
-            <span className="date">{elt.date}</span>
-          </Card.Meta>
-          <Card.Description>
-            <p>{elt.desc}</p>
-          </Card.Description>
-        </Card.Content>
-        <Card.Content extra>
-          <a href={elt.repo} target="_blank" rel="noreferrer">
+      </div>
+      
+    
+      <div className='card__content' >
+        <a className='card__content__title' href={elt.path} target='_blank' rel='noreferrer' >{name}</a>
+        <p className='date'>Date : <span>{elt.date}</span></p>
+        <p className='desc' >{elt.desc}</p>
+        <a 
+          className='gitrepo'
+          href={elt.repo} target="_blank" rel="noreferrer">
             <Icon name="github" />
-            Repository
-          </a>
-        </Card.Content>
-      </Card>
+        </a>
+      </div>
+
     </div>
   )
 }
