@@ -9,11 +9,16 @@
 /* GENERAL */
 
 body {
-  background-color: #f3edee;
+  background-image: linear-gradient(to right top, #c9d2e5, #c2d2e6, #bbd2e6, #b4d2e6, #acd2e4, #a8d3e2, #a5d3e0, #a3d4dd, #a5d5db, #a7d6d9, #a9d7d7, #acd8d5);
   height: 100vh;
   color: white;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  transition: background-image ease-in-out .3s .1s;
+}
+
+.dark {
+  background-image: linear-gradient(to right top, #2e3a4c, #314050, #364754, #3b4d58, #41535b);
 }
 
 body::-webkit-scrollbar {
@@ -32,20 +37,12 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 button:focus{
   outline: none;
 }
-
-.green {
-  color: #5fb97a;
-  font-size: .8em;
-}
-
-
-
 
 
 /* ARROW */

@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
+import React from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { Icon } from 'semantic-ui-react'
 import './navbar.scss'
@@ -7,8 +7,12 @@ import './navbar.scss'
 const NavBar = () => {
   const location = useLocation()
 
-  const [ open, setOpen ] = useState(false);
-  
+  const body = document.getElementsByTagName('body')
+
+  const setTheme = () => {
+    body[0].classList.toggle('dark')
+  }
+
   const toggleMenu = () => {
     const menu = document.querySelector('.direction')
     const menuBtn = document.querySelector('.menu-btn')
@@ -24,6 +28,7 @@ const NavBar = () => {
 
   return (
     <div className="direction">
+
         <button 
           className='menu-btn' 
           type='button'
@@ -31,6 +36,11 @@ const NavBar = () => {
         >
           <div className='bar'></div>
         </button>
+
+        <div className="toggle-dark">  
+          <input type="checkbox" id="dark" onClick={() => setTheme()} />
+      </div>
+
         <div className="direction__btn">
           <NavLink
             className="direction__btn__link"
