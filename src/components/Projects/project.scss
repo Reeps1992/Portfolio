@@ -5,10 +5,10 @@
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 60px;
 
     @media (max-width: 769px) {
-        margin-top: 70px;
+        margin-top: 30px;
         align-items: end;
 
     }
@@ -37,11 +37,11 @@
         height: 450px;
 
         border-radius: 8px;
-        background: #f3edee;
-        box-shadow:  7px 7px 14px #cfc9ca,
-                    -7px -7px 14px #ffffff,
-                    inset 2px 2px 15px rgba(238, 233, 233, 0.514),
-                    inset -2px -2px 15px rgba(221, 214, 214, 0.5);
+        background:rgba(255, 255, 255, 0);
+        box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.25),
+              -5px -5px 15px rgba(255, 255, 255, 0.15),
+              inset 5px 5px 15px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 15px rgba(255, 255, 255, 0.05);
 
 
         &__img {
@@ -76,7 +76,7 @@
         }
 
         a {
-            color: #5fb97a;
+            color: white;
             font-size: 1.6em;
         }
 
@@ -100,15 +100,15 @@
             justify-content: center;
             align-items: center;
             font-size: 1.8em;
-            background: linear-gradient(145deg, #fffeff, #dbd5d6);
-            box-shadow: 7px 7px 14px #cfc9ca,
-                        -7px -7px 14px #ffffff,
-                        inset 2px 2px 15px rgba(238, 233, 233, 0.514),
-                        inset -2px -2px 15px rgba(221, 214, 214, 0.5);
+            background: rgba(255, 255, 255, 0);
+            box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.15),
+              -5px -5px 15px 3px rgba(255, 255, 255, 0.15),
+              inset 5px 5px 15px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 15px rgba(255, 255, 255, 0.05);
             border-radius: 50%;
             height: 45px;
             width: 45px;
-            color: rgba(179, 179, 179, 0.767);
+            color: rgba(235, 235, 235, 0.6);
             transition: .3s .1s;
 
             i {
@@ -116,7 +116,7 @@
             }
 
             &:hover {
-                color: #5fb97a;
+                color:  rgba(255, 255, 255, 0.8);
             }
         }
 

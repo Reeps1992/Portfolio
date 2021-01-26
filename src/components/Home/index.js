@@ -6,7 +6,7 @@ const Home = () => (
   <section className="home">
     <div className="presentation">
       <div className="presentation__title">
-        <h1 className="green">
+        <h1>
           KEVIN <br />
           CONVERSIN
         </h1>
