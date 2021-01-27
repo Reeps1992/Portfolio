@@ -8,13 +8,20 @@
 
 /* GENERAL */
 
+html {
+  overflow: hidden;
+}
+
 body {
-  background-image: linear-gradient(to right top, #c9d2e5, #c2d2e6, #bbd2e6, #b4d2e6, #acd2e4, #a8d3e2, #a5d3e0, #a3d4dd, #a5d5db, #a7d6d9, #a9d7d7, #acd8d5);
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+  //background-repeat: no-repeat;
+  //background-size: cover;
   height: 100vh;
   color: white;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  transition: background-image ease-in-out .3s .1s;
 }
 
 .dark {

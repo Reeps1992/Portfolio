@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+.fixed {
+  height: 130px;
+  width: 100%;
+  transition: height ease-in-out .4s;
+}
+
+.grow {
+  height: 250px;
+}
+
 .direction {
   position: inherit;
   height: 60px;
@@ -18,10 +28,10 @@
     transition: height .4s .55s, width 1s 1.5s, box-shadow .7s;
     height: 120px;
     width: 75%;
-    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.25),
-              -5px -5px 15px rgba(255, 255, 255, 0.15),
-              inset 5px 5px 15px rgba(0, 0, 0, 0.05),
-              inset -5px -5px 15px rgba(255, 255, 255, 0.05);
+    box-shadow: 5px 5px 10px rgba(58, 42, 42, 0.25),
+              -5px -5px 10px rgba(255, 255, 255, 0.15),
+              inset 5px 5px 10px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 10px rgba(255, 255, 255, 0.05);
   }
   
   .menu-btn {
@@ -37,10 +47,10 @@
     color: white;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0);
-    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.25),
-              -5px -5px 15px rgba(255, 255, 255, 0.15),
-              inset 5px 5px 15px rgba(0, 0, 0, 0.05),
-              inset -5px -5px 15px rgba(255, 255, 255, 0.05);
+    box-shadow: 5px 5px 10px rgba(58, 42, 42, 0.25),
+              -5px -5px 10px rgba(255, 255, 255, 0.15),
+              inset 5px 5px 10px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 10px rgba(255, 255, 255, 0.05);
     transition: all ease-in-out .5s 1s;
 
     &:hover {
@@ -48,11 +58,11 @@
     }
 
     &:active {
-      background: rgba(255, 255, 255, 0);
-      box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.25),
-              -5px -5px 15px rgba(255, 255, 255, 0.15),
-              inset 5px 5px 15px rgba(0, 0, 0, 0.05),
-              inset -5px -5px 15px rgba(255, 255, 255, 0.05);
+      background: linear-gradient(145deg, #00000015, #ffffff10,);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15),
+              -5px -5px 10px rgba(255, 255, 255, 0.15),
+              inset 5px 5px 10px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 10px rgba(255, 255, 255, 0.05);
     }
 
     &-open {
@@ -72,6 +82,10 @@
     align-items: center;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.3);
+    @media (max-width: 425px) {
+      left: 10px;
+      top: 85px;
+    }
     
     #dark {
       position: relative;
@@ -97,7 +111,6 @@
       &:checked:before {
         transform: translateX(27px);
         background-color:  #344552;
-        color: white;
         content: "D";
       }
 
@@ -113,15 +126,15 @@
         border-radius: 50%;
         top: 5px;
         left: 3px;
-        background-color: #aad3e3;
-        color: black;
+        background-color: #0d99e5;
+        box-shadow: 2px 2px 5px rgba(68, 67, 67, 0.25),
+                    inset 2px 2px 3px rgba(255, 255, 255, 0.25),
+                    inset -2px -2px 3px rgba(0, 0, 0, 0.2);
+        color: white;
         transition: all ease-out .4s .1s;
       }
     } 
   }
-
-
-
 
   .bar {
     position: relative;
@@ -129,7 +142,7 @@
     height: 3px;
     background-color: white;
     transition: all .4s;
-    box-shadow: 5px 2px 16px rgba(0, 0, 0, 0.796);
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4));
 
     &-open {
       transform: rotate(45deg);
@@ -189,17 +202,17 @@
     
     pointer-events: initial;
     background: rgba(255, 255, 255, 0);
-    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.25),
-              -5px -5px 15px rgba(255, 255, 255, 0.15),
-              inset 5px 5px 15px rgba(0, 0, 0, 0.05),
-              inset -5px -5px 15px rgba(255, 255, 255, 0.05);
+    box-shadow: 5px 5px 10px rgba(58, 42, 42, 0.25),
+              -5px -5px 10px rgba(255, 255, 255, 0.15),
+              inset 5px 5px 10px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 10px rgba(255, 255, 255, 0.05);
 
     &:active {
-      background: rgba(255, 255, 255, 0);
-      box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.25),
-              -5px -5px 15px rgba(255, 255, 255, 0.15),
-              inset 5px 5px 15px rgba(0, 0, 0, 0.05),
-              inset -5px -5px 15px rgba(255, 255, 255, 0.05);
+      background: linear-gradient(145deg, #00000015, #ffffff05,);
+      box-shadow: 5px 5px 10px rgba(58, 42, 42, 0.25),
+              -5px -5px 10px rgba(255, 255, 255, 0.15),
+              inset 5px 5px 10px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 10px rgba(255, 255, 255, 0.05);
     }
   }
 
@@ -246,14 +259,7 @@
 
   /* MEDIA */
 
-@media (max-width : 769px ) {
-
-    .direction:hover {
-      height: 120px ;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
+@media (max-width : 769px) {
 
     .direction-open {
       width: 70%;
@@ -284,6 +290,7 @@
         border: none;
         color:  rgba(255, 255, 255, 0.75);
     }
+
     .direction__btn__link:hover {
         box-shadow: none;
         border: none;
