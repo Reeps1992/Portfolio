@@ -8,9 +8,8 @@
     margin-top: 60px;
 
     @media (max-width: 769px) {
-        margin-top: 30px;
+        margin-top: 50px;
         align-items: end;
-
     }
 
     p {
@@ -34,12 +33,12 @@
         @media (min-width: 1024px) {
             width: 30%;
         }
-        height: 450px;
+        height: 500px;
 
-        border-radius: 8px;
+        border-radius: 10px;
         background:rgba(255, 255, 255, 0);
-        box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.25),
-              -5px -5px 15px rgba(255, 255, 255, 0.15),
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25),
+              -5px -5px 15px rgba(255, 255, 255, 0.11),
               inset 5px 5px 15px rgba(0, 0, 0, 0.05),
               inset -5px -5px 15px rgba(255, 255, 255, 0.05);
 
@@ -48,10 +47,12 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.3);
             max-width: 250px;
             max-height: 250px;
             margin: auto;
             overflow: hidden;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.18);
 
             img {
                 height: 100%;
@@ -67,25 +68,28 @@
             flex-direction: column;
             justify-content: space-around;
             border-radius: 6px;
-            color: black;
+            color: white;
+
             &__title {
                 margin: 0 auto;
+                padding: .5em;
+                //border: 1px solid white;
                 font-family: 'Montserrat', sans-serif !important;
-                text-shadow: 5px 5px 12px rgba(145, 141, 141, 0.377);
+                filter: drop-shadow(4px 6px 4px rgba(0, 0, 0, 0.2));
             }
+
         }
 
         a {
             color: white;
-            font-size: 1.6em;
+            font-size: 1.9em;
         }
 
         .date {
-            text-align: right;
-            margin-top: 5px;
+            text-align: left;
+            margin-top: 10px;
             padding: 0 .8em;
             font-family: 'Roboto', sans-serif;
-
         }
 
         .desc {
@@ -99,9 +103,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            align-self: flex-end;
             font-size: 1.8em;
             background: rgba(255, 255, 255, 0);
-            box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.15),
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15),
               -5px -5px 15px 3px rgba(255, 255, 255, 0.15),
               inset 5px 5px 15px rgba(0, 0, 0, 0.05),
               inset -5px -5px 15px rgba(255, 255, 255, 0.05);

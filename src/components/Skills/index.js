@@ -6,13 +6,12 @@ import './skills.scss'
 // console.clear()
 
 const Skills = () => {
+
   const [list, setList] = useState(initialList)
 
   useEffect(() => {}, [])
 
   const setActive = (arg) => {
-    // eslint-disable-next-line no-console
-    console.log(list)
     const target = arg.textContent.toLowerCase()
     const nextList = list.map((elt) => {
       if (elt.name !== target) {
