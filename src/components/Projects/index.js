@@ -12,7 +12,7 @@ const Projects = () => {
     <div className="projects">
       <div className="projects__txt" >
         <p><span className="letter" >L</span>ors de mes formations, à la <span className="bolder" >3W Academy</span> puis chez <span className="bolder" >O&apos;clock</span>, j&apos;ai réalisé quelques pages pour mes projects de fin de formation.
-        <br/>Vous avez directement accès aux pages et aux repository GitHub, sauf exepections.
+        <br/>Vous avez directement accès aux pages et aux repository GitHub, sauf exeptions.
         </p>
         <p>Je serais ravi d&apos;avoir vos retours et conseils afin de progresser ! <a className="bolder" href="https://www.linkedin.com/in/kevin-conversin-06a510182/" target="_blank" rel="noreferrer"><Icon name="linkedin" /></a></p>
         <p>C&apos;est ici aussi que je vous partagerai mes futurs projets.</p>
