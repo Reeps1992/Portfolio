@@ -8,7 +8,7 @@ export default [
         repo : 'https://github.com/Reeps1992/Apptimizer_01',
         img : 'https://media.istockphoto.com/vectors/enterprise-resource-planning-illustration-concept-vector-id1283052761?k=6&m=1283052761&s=612x612&w=0&h=CfilrsfVQ4k3h1_PJ457sNkyPWDA4QCeGX7vsC3TTtk=',
     },
-    { 
+    {
         id : 2,
         name : 'faquarium',
         path : 'http://kevin-conversin-dev.ovh/index.php?p=home',
@@ -24,7 +24,7 @@ export default [
         date : '12 / 2020',
         desc : 'Projet de fin de formation réalisé en équipe chez O\'clock en utilisant React, Redux et Symfony.',
         repo : 'https://github.com/Reeps1992',
-        img : 'http://ec2-100-25-30-18.compute-1.amazonaws.com/api/img/recipes/salade-cesar-titi007-3.jpeg',
+        img : 'https://img.freepik.com/vecteurs-libre/cartoon-kid-cook_10308-227.jpg?size=338&ext=jpg',
     },
     { 
         id : 4,
@@ -34,7 +34,5 @@ export default [
         desc : 'Ce même Portfolio, créé en React et SCSS.',
         repo : 'https://github.com/Reeps1992',
         img : 'https://media.istockphoto.com/photos/minimal-work-space-creative-flat-lay-photo-of-workspace-desk-top-view-picture-id928805632?k=6&m=928805632&s=612x612&w=0&h=cGxMuhinwtaQZeRBs9o5w98fJYoU-vhHmO80YhWlvwE=',
-    },
-    
-    
+    },   
 ]
