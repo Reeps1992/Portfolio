@@ -29,7 +29,7 @@ const Skills = () => {
     <div className="skills">
 
       <div className="skills__txt" >
-        <p>Voici les différents langages et outils et librairies que j&apos;ai pu utiliser lors de mes formations.</p>
+        <p>Voici les différents langages, outils et librairies que j&apos;ai pu utiliser lors de mes formations.</p>
       </div>
 
       <div className="skills__content" > 

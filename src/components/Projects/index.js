@@ -15,7 +15,7 @@ const Projects = () => {
         <br/>Vous avez directement accès aux pages et aux repository GitHub, sauf exepections.
         </p>
         <p>Je serais ravi d&apos;avoir vos retours et conseils afin de progresser ! <a className="bolder" href="https://www.linkedin.com/in/kevin-conversin-06a510182/" target="_blank" rel="noreferrer"><Icon name="linkedin" /></a></p>
-        <p>C&apos;est ici aussi que je vous partagerais mes futurs projets.</p>
+        <p>C&apos;est ici aussi que je vous partagerai mes futurs projets.</p>
       </div>
       <div className="projects__content" >
         {list.map((elt) => (
