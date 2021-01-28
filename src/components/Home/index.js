@@ -14,7 +14,7 @@ const Home = () => (
 
       <div className="presentation__text">
         <p id="job">Web Developper</p>
-        <p>Near Rennes & Saint-Malo, France</p>
+        <p><Icon name="map marker alternate" /> Rennes & Saint-Malo, France</p>
       </div>
     </div>
 
