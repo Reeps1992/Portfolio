@@ -29,14 +29,19 @@ figure {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        @media (min-width: 1024px) {
-            margin-top: 130px;
+
+        &__desc {
+            font-family: 'Montserrat', sans-serif;
+            text-align: left;
+            width: 84%;
+            margin: 20px auto;
         }
 
         &__text {
-            display: flex;
-            flex-direction: column;
-            align-self: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 84%;
+            text-align: left;
         }
 
         &__title {
@@ -47,8 +52,7 @@ figure {
             h1 {
                 font-size: 8em;
                 text-align: left;
-                padding-top: 20px;
-                padding-bottom: 50px;
+                margin: 20px 0;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: normal;
                 @media (max-width: 769px) {
@@ -79,10 +83,10 @@ figure {
                         inset 5px 5px 10px rgba(0, 0, 0, 0.05),
                         inset -5px -5px 10px rgba(255, 255, 255, 0.05);
             padding: 1em;
-            color: rgba(235, 235, 235, 0.6);
+            color: rgba(235, 235, 235, 0.95);
             transition: .3s .15s;
             &:hover {
-                color:  rgba(255, 255, 255, 0.8);
+                color:  rgba(255, 255, 255, 1);
             }
         }
 

@@ -1,11 +1,25 @@
 .skills {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
     margin: 0 auto;
     margin-top: 60px;
     width: 90%;
+
+    &__txt {
+        margin-bottom: 50px;
+        font-size: 1.6em;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        p {
+            padding: 0.5em 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
     @media (max-width : 769px ) {
         margin-top: 60px;

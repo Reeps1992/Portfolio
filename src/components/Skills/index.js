@@ -26,40 +26,50 @@ const Skills = () => {
   }
 
   return (
-    <section className="skills">
-      <div className="skill">
-        <h2>Languages</h2>
-        {list.map((elt) => {
-          if (elt.classification === 'language') {
-            return <Skill className="skill__skill-elt" key={elt.name} elt={elt} setActive={setActive} />
-          }
-        })}
+    <div className="skills">
+
+      <div className="skills__txt" >
+        <p>Voici les différents langages et outils et librairies que j&apos;ai pu utiliser lors de mes formations.</p>
       </div>
-      <div className="skill">
-        <h2>Frameworks</h2>
-        {list.map((elt) => {
-          if (elt.classification === 'framework') {
-            return <Skill className="skill__skill-elt" key={elt.name} elt={elt} setActive={setActive} />
-          }
-        })}
+
+      <div className="skills__content" > 
+
+        <div className="skill">
+          <h2>Languages</h2>
+          {list.map((elt) => {
+            if (elt.classification === 'language') {
+              return <Skill className="skill__skill-elt" key={elt.name} elt={elt} setActive={setActive} />
+            }
+          })}
+        </div>
+        <div className="skill">
+          <h2>Frameworks</h2>
+          {list.map((elt) => {
+            if (elt.classification === 'framework') {
+              return <Skill className="skill__skill-elt" key={elt.name} elt={elt} setActive={setActive} />
+            }
+          })}
+        </div>
+        <div className="skill">
+          <h2>Tools</h2>
+          {list.map((elt) => {
+            if (elt.classification === 'tool') {
+              return <Skill className="skill__skill-elt" key={elt.name} elt={elt} setActive={setActive} />
+            }
+          })}
+        </div>
+        <div className="skill">
+          <h2>Special</h2>
+          {list.map((elt) => {
+            if (elt.classification === 'special') {
+              return <Skill className="skill__skill-elt" key={elt.name} elt={elt} setActive={setActive} />
+            }
+          })}
+        </div>
+
       </div>
-      <div className="skill">
-        <h2>Tools</h2>
-        {list.map((elt) => {
-          if (elt.classification === 'tool') {
-            return <Skill className="skill__skill-elt" key={elt.name} elt={elt} setActive={setActive} />
-          }
-        })}
-      </div>
-      <div className="skill">
-        <h2>Special</h2>
-        {list.map((elt) => {
-          if (elt.classification === 'special') {
-            return <Skill className="skill__skill-elt" key={elt.name} elt={elt} setActive={setActive} />
-          }
-        })}
-      </div>
-    </section>
+
+    </div>
   )
 }
 
