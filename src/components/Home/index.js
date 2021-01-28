@@ -11,6 +11,13 @@ const Home = () => (
           CONVERSIN
         </h1>
       </div>
+      <div className="presentation__desc" >
+        <p>
+          Bonjour et bienvenue !
+          <br/>
+          Ceci est mon portfolio. Je vous partage ici mes projets et mes compétences.
+        </p>
+      </div>
 
       <div className="presentation__text">
         <p id="job">Web Developper</p>
