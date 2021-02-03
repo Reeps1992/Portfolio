@@ -29,7 +29,7 @@ export default [
     { 
         id : 4,
         name : 'portfolio',
-        path : 'https://portfolio-lovat-gamma-43.vercel.app/',
+        path : 'https://portfolio-kevin-conversin.vercel.app/',
         date : '01 / 2021',
         desc : 'Ce même Portfolio, créé en React et SCSS.',
         repo : 'https://github.com/Reeps1992',
