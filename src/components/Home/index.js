@@ -38,7 +38,7 @@ const Home = () => (
 
       <a
         className="socials__linkedin"
-        href="https://www.linkedin.com/in/kevin-conversin-06a510182/"
+        href="www.linkedin.com/in/kevin-conversin"
         target="_blank"
         rel="noreferrer"
         alt="LinkedIn_link_kevin_converin"
