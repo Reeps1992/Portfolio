@@ -34,5 +34,14 @@ export default [
         desc : 'Ce même Portfolio, créé en React et SCSS.',
         repo : 'https://github.com/Reeps1992',
         img : 'https://media.istockphoto.com/photos/minimal-work-space-creative-flat-lay-photo-of-workspace-desk-top-view-picture-id928805632?k=6&m=928805632&s=612x612&w=0&h=cGxMuhinwtaQZeRBs9o5w98fJYoU-vhHmO80YhWlvwE=',
+    },
+    { 
+        id : 5,
+        name : 'Meril',
+        path : 'https://maquette-dribble-meril.vercel.app/#',
+        date : '02 / 2021',
+        desc : 'Intégration d\'une maquette Dribble. Design par Afterglow',
+        repo : 'https://github.com/Reeps1992/MaquetteDribbleMeril',
+        img : 'https://maquette-dribble-meril.vercel.app/images/section1img.png',
     },   
 ]
