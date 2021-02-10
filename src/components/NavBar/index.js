@@ -51,9 +51,6 @@ const NavBar = () => {
 
           <div className="direction__btn">
             <NavLink
-              onClick={() =>  setTimeout(() => {
-                toggleMenu()
-              }, 200)}
               className="direction__btn__link"
               to="/"
               activeClassName={location.pathname !== '/' ? null : 'nav__active'}
@@ -65,9 +62,6 @@ const NavBar = () => {
 
           <div className="direction__btn">
             <NavLink
-              onClick={() =>  setTimeout(() => {
-                toggleMenu()
-              }, 200)}
               className="direction__btn__link"
               to="/skills"
               activeClassName="nav__active"
@@ -79,9 +73,6 @@ const NavBar = () => {
 
           <div className="direction__btn">
             <NavLink
-              onClick={() =>  setTimeout(() => {
-                toggleMenu()
-              }, 200)}
               className="direction__btn__link"
               to="/projects"
               activeClassName="nav__active"
